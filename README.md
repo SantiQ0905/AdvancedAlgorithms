@@ -12,26 +12,6 @@ This repo is built for quick experimentation in **GitHub Codespaces** or locally
 
 ---
 
-## Repo layout
-
-```
-
-AdvancedAlgorithms/
-└── BruteForce/
-├── ClosestPair/
-│   └── closest\_pair.py
-├── Knapsack/
-│   ├── knapsack.py
-│   └── TestFiles/           # put .txt instances here (see format below)
-└── StringMatching/
-└── string\_match.py
-
-````
-
-> If your filenames differ, just adjust the commands below.
-
----
-
 ## Quickstart (one click via Codespaces)
 
 1. Click this badge → **“Create codespace”**  
@@ -53,6 +33,26 @@ python BruteForce/ClosestPair/closest_pair.py
 > **Python:** tested with 3.10–3.12. Codespaces typically has a recent Python preinstalled.
 
 ---
+
+---
+
+## Repo layout
+
+```
+
+AdvancedAlgorithms/
+└── BruteForce/
+├── ClosestPair/
+│   └── closest\_pair.py
+├── Knapsack/
+│   ├── knapsack.py
+│   └── TestFiles/           # put .txt instances here (see format below)
+└── StringMatching/
+└── string\_match.py
+
+````
+
+> If your filenames differ, just adjust the commands below.
 
 ## 0/1 Knapsack (Brute Force)
 
@@ -173,9 +173,3 @@ python BruteForce/ClosestPair/closest_pair.py --points_file ./points.txt
 | Closest Pair    | All-pairs distances            | `O(n²)`      | `O(1)`        |
 
 > These brute-force methods are **guaranteed correct** but become impractical at scale. They’re ideal for learning, small instances, and as baselines against more advanced algorithms (DP, divide & conquer, KMP, etc.).
-
-
-```
-
-If you want, I can also craft minimal **CLI wrappers** for your `string_match.py` and `closest_pair.py` (with `argparse`) to match the README usage exactly.
-```

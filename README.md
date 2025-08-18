@@ -1,6 +1,3 @@
-Here’s a ready-to-paste **`README.md`** for your repo that includes **Codespaces one-click**, plus instructions for **Knapsack**, **String Matching**, and **Closest Pair**.
-
-```markdown
 # Advanced Algorithms — Brute Force Suite
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/SantiQ0905/AdvancedAlgorithms?quickstart=1)

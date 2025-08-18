@@ -1,10 +1,5 @@
 # Advanced Algorithms — Brute Force Suite
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SantiQ0905/AdvancedAlgorithms/HEAD?labpath=Run_All.ipynb)
-
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/SantiQ0905/AdvancedAlgorithms?quickstart=1)
-
 Brute-force reference implementations for three classic problems:
 
 - **0/1 Knapsack (brute force via subset enumeration)**

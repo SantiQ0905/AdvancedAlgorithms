@@ -3,23 +3,7 @@ import os    # For file and directory operations
 import math  # For mathematical functions like sqrt()
 
 def distance_squared(point1, point2):
-    """
-    Calculate the SQUARED Euclidean distance between two points in 2D space
-    
-    This is an optimization that avoids the expensive square root calculation.
-    Since sqrt() is a monotonic function, comparing squared distances gives
-    the same ordering as comparing actual distances:
-    If d1² < d2², then d1 < d2
-    
-    The squared Euclidean distance formula is: d² = (x2-x1)² + (y2-y1)²
-    
-    Args:
-        point1: Tuple containing (x, y) coordinates of first point
-        point2: Tuple containing (x, y) coordinates of second point
-    
-    Returns:
-        float: The SQUARED Euclidean distance between the two points
-    """
+
     # Extract x and y coordinates from the first point
     x1, y1 = point1
     # Extract x and y coordinates from the second point
@@ -33,49 +17,13 @@ def distance_squared(point1, point2):
     return (x2 - x1) ** 2 + (y2 - y1) ** 2
 
 def distance(point1, point2):
-    """
-    Calculate Euclidean distance between two points in 2D space
-    
-    This function is kept for when we need the actual distance value
-    (like for final output). For comparisons, we use distance_squared().
-    
-    The Euclidean distance formula is: d = √[(x2-x1)² + (y2-y1)²]
-    
-    Args:
-        point1: Tuple containing (x, y) coordinates of first point
-        point2: Tuple containing (x, y) coordinates of second point
-    
-    Returns:
-        float: The Euclidean distance between the two points
-    """
+
     # Use the squared distance function and then take square root
     # This way we avoid duplicating the calculation logic
     return math.sqrt(distance_squared(point1, point2))
 
 def closest_pair_brute_force(points):
-    """
-    Find the closest pair of points using brute force algorithm
-    
-    This algorithm compares every possible pair of points to find the minimum distance.
-    It's called "brute force" because it doesn't use any optimization - it simply
-    checks all possible combinations.
-    
-    OPTIMIZATION: This version uses squared distances for comparisons to avoid
-    expensive square root calculations. Only the final result is converted to
-    actual distance.
-    
-    Time complexity: O(n²) - where n is the number of points
-    Space complexity: O(1) - only uses constant extra space
-    
-    Args:
-        points: List of tuples, where each tuple contains (x, y) coordinates
-    
-    Returns:
-        tuple: (point1, point2, min_distance) where:
-               - point1: First point of the closest pair
-               - point2: Second point of the closest pair  
-               - min_distance: The ACTUAL distance between the closest pair
-    """
+
     # Get the total number of points in the list
     n = len(points)
     
@@ -117,26 +65,7 @@ def closest_pair_brute_force(points):
     return closest_pair[0], closest_pair[1], min_distance
 
 def read_points_from_file(filename):
-    """
-    Read points from a text file and parse them into a list of coordinate tuples
-    
-    Expected file format:
-    - First line: integer representing the number of points (n)
-    - Next n lines: each line contains x and y coordinates separated by tab
-    
-    Example file content:
-    3
-    1.5    2.7
-    -3.2   4.1
-    0.0    -1.8
-    
-    Args:
-        filename: String path to the file containing point data
-    
-    Returns:
-        list: List of tuples where each tuple contains (x, y) coordinates
-              Returns empty list if file is not found or has invalid format
-    """
+
     try:
         # Attempt to open and read the file
         # 'r' mode means read-only text mode
@@ -185,18 +114,6 @@ def read_points_from_file(filename):
         return []  # Return empty list
 
 def process_test_files():
-    """
-    Process all test files in the TestFiles folder and find closest pairs
-    
-    This function:
-    1. Locates the TestFiles directory
-    2. Finds all .txt files in that directory
-    3. Processes each file to find the closest pair of points
-    4. Displays the results in a formatted manner
-    
-    The function handles multiple test files automatically and provides
-    comprehensive output for each file processed.
-    """
     # Define the directory name where test files are located
     test_files_dir = "BruteForce\ClosestPair\TestFiles"
     
@@ -265,27 +182,10 @@ def process_test_files():
         print()
 
 def main():
-    """
-    Main function - entry point of the program
-    
-    This function serves as the starting point when the script is executed.
-    It calls the process_test_files() function to begin the closest pair
-    analysis on all test files.
-    
-    By organizing the code this way, we separate the main logic from the
-    execution entry point, making the code more modular and easier to test.
-    """
     # Call the function that processes all test files
     process_test_files()
 
-# This is a Python idiom that checks if this file is being run directly
-# (not imported as a module by another script)
-# 
-# __name__ is a special variable that Python sets automatically:
-# - When file is run directly: __name__ == "__main__"  
-# - When file is imported: __name__ == "filename" (without .py)
-#
-# This allows the script to be imported without automatically running main()
+
 if __name__ == "__main__":
     # Only run main() if this file is executed directly
     main()

@@ -1,3 +1,12 @@
+# Analysis and Design of Advanced Algorithms 
+# Group #607
+# Team 6
+# Dr. Katie Brodhead
+
+# Santiago Quintana Moreno A01571222
+
+# ------ KNAPSACK ------
+
 import os
 
 # -----------------------------------------------------------------------------
@@ -50,7 +59,6 @@ def brute_force_knapsack(values, weights, capacity):
 # Utilities to load knapsack instances from a text file
 # -----------------------------------------------------------------------------
 def _coerce_int(s):
-    """Convert string to int if possible, else float→int if whole number."""
     try:
         return int(s)
     except ValueError:
@@ -60,17 +68,6 @@ def _coerce_int(s):
         raise ValueError("Invalid number: " + s)
 
 def load_knapsack_from_file(path):
-    """
-    Parse a knapsack instance file.
-    Supports:
-      - Lines starting with '#' are ignored.
-      - Comma- or space-separated fields.
-      - Item lines can be:
-          value weight
-          name value weight
-      - First non-comment line must specify 'capacity:' or a number.
-    Returns: (capacity, values, weights, names_or_None)
-    """
     capacity = None
     values = []
     weights = []

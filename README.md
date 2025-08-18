@@ -1,6 +1,6 @@
 # Advanced Algorithms — Brute Force Suite
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SantiQ0905/AdvancedAlgorithms/HEAD?labpath=Run_All.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SantiQ0905/AdvancedAlgorithms/HEAD?urlpath=%2Fdoc%2Ftree%2FRun_All.ipynb)
 
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/SantiQ0905/AdvancedAlgorithms?quickstart=1)

@@ -1,0 +1,14 @@
+# Classic, tight capacity forcing careful selection
+capacity: 50
+items:
+# name, value, weight
+Camera, 325, 18
+Laptop, 500, 28
+Tripod, 90, 8
+Power Bank, 60, 5
+Jacket, 120, 12
+Headphones, 150, 10
+Lens, 220, 15
+Snacks, 40, 4
+Water, 30, 3
+Notebook, 35, 2

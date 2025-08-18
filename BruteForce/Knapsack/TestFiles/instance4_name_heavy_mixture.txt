@@ -1,0 +1,15 @@
+capacity: 43
+items:
+# name, value, weight
+Gaming Mouse, 95, 9
+Mechanical Keyboard, 160, 16
+USB Hub, 40, 4
+NVMe SSD, 120, 10
+HDMI Switch, 55, 6
+Portable SSD, 130, 11
+Ethernet Adapter, 35, 3
+Laptop Stand, 65, 8
+Webcam, 75, 7
+LED Strip, 25, 2
+Microphone, 105, 12
+Desk Mat, 30, 3

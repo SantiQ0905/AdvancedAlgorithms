@@ -1,0 +1,25 @@
+capacity: 75
+items:
+# name value weight
+4K Monitor  350 28
+Ultrabook   520 35
+GPU         430 30
+CPU         260 18
+RAM Kit     190 12
+PSU         160 13
+Case        120 14
+Cooler      110 9
+M.2 Drive   210 11
+SATA SSD    150 10
+HDD         95  12
+Router AX   140 8
+NAS Bay     180 15
+UPS         200 20
+Speaker Set 170 13
+DAC/Amp     130 7
+Headset     125 6
+Keyboard    115 8
+Mouse       80  5
+Mousepad    35  2
+Flash Drive 45  2
+Webcam Pro  90  6

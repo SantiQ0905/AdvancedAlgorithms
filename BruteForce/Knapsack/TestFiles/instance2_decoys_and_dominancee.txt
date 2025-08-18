@@ -1,0 +1,16 @@
+capacity: 60
+items:
+# Some items are dominated (higher weight, lower value)
+Gold Bar, 700, 60
+Silver Bar, 360, 35
+Bronze Bar, 200, 25
+Collector Coins, 190, 20
+Stamps, 180, 18
+Art Book (Large), 140, 16
+Art Book (Pocket), 135, 12
+Rare Poster, 120, 11
+Figure A, 115, 10
+Figure B, 113, 10
+Keychain Set, 50, 6
+Pins Set, 40, 5
+Postcards, 35, 4

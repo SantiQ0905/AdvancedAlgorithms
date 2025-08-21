@@ -17,7 +17,7 @@ def next_permutation(seq):
     while i >= 0 and seq[i] >= seq[i + 1]:
         i -= 1
     if i == -1:
-        return False  # Last permutation reached
+        return False  # Last permutation reacheds
 
     # Step 2: Find the rightmost successor to pivot
     j = len(seq) - 1

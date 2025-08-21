@@ -1,3 +1,13 @@
+# Analysis and Design of Advanced Algorithms 
+# Group #607
+# Team 6
+# Dr. Katie Brodhead
+
+# Santiago Quintana Moreno A01571222
+# Miguel Ángel Álvarez Hermida A01722925
+
+# ------ GENERATING SUBSETS ------
+
 def generate_subsets(n):
     """Generate all subsets of {1, 2, ..., n}."""
     subsets = []

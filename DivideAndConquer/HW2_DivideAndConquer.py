@@ -128,7 +128,7 @@ def quickselect(arr, k, in_place=False):
 
 
 # -------------------------------
-# Tiny demo & sanity checks
+# DEMO
 # -------------------------------
 def _demo():
     print("=== GCD demo ===")

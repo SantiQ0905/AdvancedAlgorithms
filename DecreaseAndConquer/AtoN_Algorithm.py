@@ -8,6 +8,13 @@
 
 # ----- CLASS ACTIVITY 2: DECREASE AND CONQUER -----
 
+#     for _ in range(n): result *= a
+# has O(n) time complexity (linear in the exponent).
+# This is similar to brute force repeated multiplication.
+# It's not better than brute force; both do n multiplications.
+# More efficient algorithms (like exponentiation by squaring) achieve O(log n) time.
+# For large n, this code is much slower than those optimized approaches.
+
 
 def pow_dec_rec_safe(a, n):
     # Reject non-integer exponents without raising
@@ -35,10 +42,10 @@ def pow_dec_rec_safe(a, n):
 
 
 def pow_dec_iter_safe(a, n):
-    """
-    Iterative decrease-and-conquer power (preferred in Python to avoid recursion limits).
-    Returns: (value, error)
-    """
+    
+    # Iterative decrease-and-conquer power (preferred in Python to avoid recursion limits).
+    # Returns: (value, error)
+    
     if not isinstance(n, int):
         return None, "Exponent must be an integer"
 
@@ -53,9 +60,7 @@ def pow_dec_iter_safe(a, n):
     return result, None
 
 
-# --- Tiny self-checks without `assert` ---
 def _almost_equal(x, y, eps=1e-12):
-    # Works for int/float; avoids exceptions for None
     return (x == y) if (isinstance(x, int) and isinstance(y, int)) else (abs(x - y) < eps)
 
 if __name__ == "__main__":

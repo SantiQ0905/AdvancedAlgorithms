@@ -1,3 +1,12 @@
+# Analysis and Design of Advanced Algorithms 
+# Group #607
+# Team 5
+# Luis Salomón Flores Ugalde
+
+# Santiago Quintana Moreno A01571222
+# Miguel Ángel Álvarez Hermida A01722925
+
+# ------ CLASS ACT 5 - GRAPHS ------
 import heapq
 
 # ----------- GRAPH READING -----------

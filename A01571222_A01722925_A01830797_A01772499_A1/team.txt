@@ -1,0 +1,21 @@
+Team Members and Contributions:
+
+Santiago Quintana Moreno A01571222
+- Part 1: Malicious Code Detection (KMP Algorithm Implementation)
+- KMP pattern matching algorithm for finding malicious code in transmissions
+- First occurrence detection using KMP with optimal O(n+m) time complexity
+
+Miguel Ángel Álvarez Hermida A01722925
+- Part 2: Longest Palindromic Substring
+- Manacher's Algorithm implementation for finding palindromes
+- Efficient O(n) time complexity palindrome detection
+
+Benjamin-Christian Blaga A01830797
+- Part 3: Longest Common Substring (Suffix Automaton Implementation)
+- Suffix Automaton data structure implementation
+- Collaborated on efficient substring matching
+
+Alfredo Luce Morales A01772499
+- Part 3: Longest Common Substring (Algorithm Integration)
+- Integration of Suffix Automaton for finding common substrings
+- Collaborated on substring matching algorithm

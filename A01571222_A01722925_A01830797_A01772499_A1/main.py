@@ -14,20 +14,18 @@
 from typing import Tuple
 import os
 
-# Get the directory where this script is located
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(SCRIPT_DIR, "data")
 
 FILENAMES_TRANSMISSIONS = [
-    os.path.join(SCRIPT_DIR, "transmission1.txt"),
-    os.path.join(SCRIPT_DIR, "transmission2.txt")
+    os.path.join(DATA_DIR, "transmission1.txt"),
+    os.path.join(DATA_DIR, "transmission2.txt")
 ]
 FILENAMES_MCODE = [
-    os.path.join(SCRIPT_DIR, "mcode1.txt"),
-    os.path.join(SCRIPT_DIR, "mcode2.txt"),
-    os.path.join(SCRIPT_DIR, "mcode3.txt")
+    os.path.join(DATA_DIR, "mcode1.txt"),
+    os.path.join(DATA_DIR, "mcode2.txt"),
+    os.path.join(DATA_DIR, "mcode3.txt")
 ]
-
-# ---------- Helpers: IO & normalization ----------
 
 def read_stream(path: str) -> str:
     with open(path, "r", encoding="utf-8") as f:
@@ -39,7 +37,6 @@ def read_stream(path: str) -> str:
     return "".join(ch for ch in data if ch in allowed)
 
 # ---------- KMP Algorithm Implementation ----------
-
 def kmp_lps(pattern: str) -> list:
     m = len(pattern)
     lps = [0] * m
@@ -85,15 +82,12 @@ def kmp_search_first(text: str, pattern: str) -> int:
             else:
                 i += 1
     
-    return -1  # pattern not found
-
-# ---------- Part 1: containment (first occurrence) ----------
+    return -1
 
 def first_occurrence(haystack: str, needle: str) -> int:
     if not needle:
-        return 1  # Convention: empty needle found at position 1
+        return 1 
     
-    # Use KMP algorithm for efficient searching
     idx = kmp_search_first(haystack, needle)
     return idx + 1 if idx != -1 else 0
 
@@ -114,7 +108,6 @@ def part1(transmissions, mcodes):
             else:
                 print(f"  Mcode{j}: Not found (false)")
 
-# ---------- Part 2: longest palindromic substring (1-based inclusive) ----------
 
 def longest_palindrome_bounds(s: str) -> Tuple[int, int]:
     if not s:
